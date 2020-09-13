@@ -2,6 +2,6 @@
 
 ## to-do list
 - [X] webpage style
-- [ ] implement funcionality
+- [X] implement funcionality
 - [ ] Update README.md
 - [ ] publish

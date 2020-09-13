@@ -6,20 +6,17 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint ./src/ --ext .ts --ext .tsx --fix",
-        "knex:migrate": "knex migrate:latest --knexfile knexfile.js",
-        "knex:seed": "knex seed:run --knexfile knexfile.js",
-        "knex:rollback": "knex migrate:rollback",
-        "knex:dev-empty": "knex migrate:rollback && knex migrate:latest",
-        "knex:dev": "knex migrate:rollback && knex migrate:latest && knex seed:run"
+        "lint": "eslint ./src/ --ext .ts --ext .tsx --fix"
     },
     "dependencies": {
         "@material-ui/core": "^4.11.0",
+        "crypto-js": "^4.0.0",
         "next": "9.5.2",
         "react": "16.13.1",
         "react-dom": "16.13.1"
     },
     "devDependencies": {
+        "@types/crypto-js": "^3.1.47",
         "@types/node": "^14.6.2",
         "@types/react": "^16.9.49",
         "@typescript-eslint/eslint-plugin": "^4.0.1",
