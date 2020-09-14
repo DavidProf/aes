@@ -7,7 +7,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "eslint ./src/ --ext .ts --ext .tsx --fix",
-        "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
+        "deploy:gh-pages": "next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
     },
     "dependencies": {
         "@material-ui/core": "^4.11.0",
