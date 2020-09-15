@@ -57,6 +57,7 @@ export const Home: React.FC = () => {
                     <Grid item sm={12} xs={12}>
                         <Tooltip title="Enter your secret key" placement="bottom-start">
                             <TextField
+                                data-testid="key"
                                 fullWidth
                                 color="primary"
                                 label="Key"
@@ -74,6 +75,7 @@ export const Home: React.FC = () => {
                     <Grid item sm={6} xs={12}>
                         <Tooltip title="Type or paste the text to encrypt" placement="bottom-start">
                             <TextField
+                                data-testid="decrypted"
                                 fullWidth
                                 multiline
                                 rows={12}
@@ -88,6 +90,7 @@ export const Home: React.FC = () => {
                     <Grid item sm={6} xs={12}>
                         <Tooltip title="Type or paste the text to decrypt" placement="bottom-start">
                             <TextField
+                                data-testid="encrypted"
                                 fullWidth
                                 multiline
                                 rows={12}
