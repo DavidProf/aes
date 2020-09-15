@@ -1,7 +1,6 @@
 import React from 'react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import {
     createMuiTheme,
     MuiThemeProvider,
@@ -30,11 +29,9 @@ const theme = createMuiTheme({
 })
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-    const router = useRouter()
-
     return (<>
         <Head>
-            <title>{router.pathname.split('/').pop()} - NextJS Demo</title>
+            <title>Cypher AES</title>
         </Head>
         <MuiThemeProvider theme={theme}>
             <CssBaseline />

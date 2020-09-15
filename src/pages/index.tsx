@@ -1,5 +1,4 @@
 import React from 'react'
-import Head from 'next/head'
 import {
     Container,
     TextField,
@@ -48,9 +47,6 @@ export const Home: React.FC = () => {
 
     return (
         <>
-            <Head>
-                <title>NextJS Demo</title>
-            </Head>
             {working && <LinearProgress style={{ position: 'fixed', width: '100vw' }} />}
             <Container maxWidth="lg">
                 <Grid container justify="space-between" spacing={2} >
