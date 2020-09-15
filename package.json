@@ -5,9 +5,10 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
+        "build:front": "next build && next export",
         "start": "next start",
         "lint": "eslint ./src/ --ext .ts --ext .tsx --fix",
-        "deploy:gh-pages": "next build && next export && touch out/.nojekyll && gh-pages -d out -t true",
+        "deploy:gh-pages": "yarn build:front && touch out/.nojekyll && gh-pages -d out -t true",
         "test": "jest --verbose"
     },
     "dependencies": {
