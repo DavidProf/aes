@@ -4,8 +4,12 @@ module.exports = {
             "/": { page: "/" },
         }
     },
-    basePath: '/aes',
-    assetPrefix: '/aes/',
+    /**
+     * comment out the following line to fix project for owned domains
+     * uncomment to fix project for github pages domain like user.github.io/project
+     */
+    // basePath: '/aes',
+    // assetPrefix: '/aes/',
     webpack: (config) => {
         config.module.rules = config.module.rules.map(rule => {
             if (rule.loader === 'babel-loader') {
